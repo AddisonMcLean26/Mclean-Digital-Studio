@@ -2446,3 +2446,36 @@ footer {
         text-align: center;
     }
 }
+
+/* Mobile viewport containment: prevent horizontal page scrolling */
+html, body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: clip;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+img, video, iframe, svg {
+    max-width: 100%;
+}
+
+@media (max-width: 600px) {
+    .hero, .section, .contact, .navbar, .footer-inner,
+    .hero-content, .hero-visual, .contact-layout,
+    .form-container, .inquiry-form, .founding-offer {
+        min-width: 0;
+        max-width: 100%;
+    }
+
+    .form-row, .contact-layout, .founding-offer {
+        min-width: 0;
+    }
+
+    .hero h1, .section h2, .contact h2,
+    .form-heading h3, .founding-offer h3 {
+        overflow-wrap: anywhere;
+    }
+}
