@@ -2359,6 +2359,94 @@ footer {
     font-size: 1.7rem;
 }
 }
+
+/* =========================================
+   FOUNDING CLIENT LAUNCH
+========================================= */
+
+.founding-offer {
+    margin: 55px 0 28px;
+    padding: 42px;
+    border: 1px solid var(--lilac-light);
+    border-radius: 24px;
+    background: var(--lilac-pale);
+    display: grid;
+    grid-template-columns: 1.35fr 0.65fr;
+    gap: 45px;
+    align-items: center;
+}
+
+.founding-offer h3 {
+    margin: 8px 0 14px;
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    line-height: 1;
+    letter-spacing: -2px;
+}
+
+.founding-offer > div > p:not(.package-label) {
+    max-width: 620px;
+    color: var(--text-soft);
+}
+
+.founding-offer-price {
+    padding-left: 35px;
+    border-left: 1px solid var(--lilac-light);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.founding-offer-price > span,
+.founding-offer-price > small {
+    color: var(--text-soft);
+}
+
+.founding-offer-price > strong {
+    margin: 5px 0;
+    font-size: clamp(3.4rem, 6vw, 5rem);
+    line-height: 1;
+    letter-spacing: -3px;
+}
+
+.founding-offer-price .pricing-button {
+    margin-top: 24px;
+}
+
+.standard-packages-label {
+    margin: 45px 0 22px;
+    color: var(--lilac-dark);
+    font-size: 0.7rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+@media (max-width: 800px) {
+    .founding-offer {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 34px;
+    }
+
+    .founding-offer-price {
+        padding-left: 0;
+        padding-top: 28px;
+        border-left: none;
+        border-top: 1px solid var(--lilac-light);
+    }
+}
+
+@media (max-width: 600px) {
+    .founding-offer {
+        padding: 28px 22px;
+    }
+
+    .founding-offer-price .pricing-button {
+        width: 100%;
+        text-align: center;
+    }
+}
+
 /* Mobile viewport containment: prevent horizontal page scrolling */
 html, body {
     width: 100%;
